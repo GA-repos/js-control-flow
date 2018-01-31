@@ -6,11 +6,11 @@
   - Identify elements of control flow
   - Utilize control flow elements to direct the execution of a program with conditional logic
 
-## What is Control Flow? (5 min, 0:05)
+## What is Control Flow? (5 min / 2:35)
 
 Control flow is simply applying conditional logic to how your code is run. You may want to run certain blocks of code but not others, or you might want to run certain code blocks over and over again. We probably wouldn't want to show a user account page to a user who isn't logged in, since there would be no data to display!
 
-## Conditionals (a.k.a. Control Flow) (10 minutes / 0:15)
+## Conditionals (a.k.a. Control Flow) (10 min / 2:45)
 
 A common feature of programming languages is conditional blocks. We can execute different pieces of code depending on whether a condition(s) is met.
 
@@ -59,12 +59,15 @@ if (assignments_completed === 0) {
 }
 ```
 
-#### You Do (10min / 0:25)
-Write a conditional statement that acts like a bouncer at a bar. If the age variable is below 21, the program should output that the person cannot enter because they are too young, if they are over 21 they can enter, and if age is not a number it outputs an error.
+### You Do (10 min / 2:55)
+
+In [Repl.it](https://repl.it/) or VS Code, write a conditional statement that acts like a bouncer at a bar. If the age variable is below 21, the program should output that the person cannot enter because they are too young, if they are over 21 they can enter, and if age is not a number it outputs an error.
+
+**Bonus**: if age is 18 or older, but under 21, output that the person can enter the bar but cannot drink!
 
 [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) is more documentation.
 
-### While Loops (10minutes / 0:35)
+## while loop (10 min / 3:05)
 
 A `while` loop is like an `if` statement but it will execute the content of its block repeatedly until the condition becomes false.
 
@@ -87,7 +90,7 @@ while (passwordGuess !== 'password') {
 alert('Argh! You have escaped! I am so lonely, the world never says hello back.')
 ``` 
 
-
+<!-- 
 ## Arrays (10 minutes / 0:45)
 
 In addition to the primitive data types we have seen so far in class, JavaScript also has the ability to store collections of data. The most simple type of collection is an array. Arrays are lists of other data, accessed by their position in the list. Array indexes start at 0 and move up from there.
@@ -116,7 +119,8 @@ console.log(myArr)
 
 [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) is more documentation on arrays.
 
-## `for` loop (10 minutes / 0:55)
+-->
+## for loop (10 minutes / 3:15)
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -124,8 +128,8 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-The loop is indicated with the keyword `for` followed parentheses that contain 3 parts separate by `;`...
-  1. Instantiates the iteratee (in this example, `i`). `i` begins at 0 and will increase throughout the loops execution. `i` can be accessed within the loop.
+The `for` loop contains 3 parts separated by `;`
+  1. Instantiates the iteratee (in this example, `i`). `i` begins at 0 and can be accessed within the loop.
   2. The comparison expression. The loop will continue to execute until this expression evaluates to false.
   3. How much the iteratee is incremented after each execution of the loop. In this example, `i` will increase by 1 after each iteration of the loop.
 
@@ -134,40 +138,56 @@ The actual content of the loop is located within the trailing curly brackets. In
 Oftentimes we will use a `for` loop to iterate through an array. That means we will want the loop to execute as many times as there are items in that array. Take a look at this example...
 
 ```js
-let names = ["ali", "nayana", "andy", "james", "zakk", "perry", "james", "mike", "max"]
+let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
 
-for (let i = 0; i < names.length; i++) {
-  console.log(names[i])
+for (let i = 0; i < instructors.length; i++) {
+  console.log(instructors[i])
 }
 ```
 
 > This loop will run 7 times because the length of the array is 7. Each iteration of the loop will print out whichever name exists at index `i` within the array.
 
-### `for in` loop (5 minutes / 1:00)
+We can also combine loops with `if-else` statements for even more control.  
+
+```js
+let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
+let currentInstructor = prompt('Who is currently teaching?')
+
+for (let i = 0; i < instructors.length; i++) {
+  if (instructors[i] === currentInstructor) {
+    console.log(instructors[i] + ' is currently teaching!')
+  } else {
+    console.log(instructors[i])
+  }
+}
+```
+
+### `for in` loop (5 minutes / 3:20)
 
 The `for in` loop functions similar to the `for` loop, but it is only used when iterating through a collection.
 
 ```js
-var names = ["ali", "nayana", "andy", "james", "zakk", "perry", "james", "mike", "max"]
+let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
 
-for (let i in names) {
-  console.log(names[i])
+for (let i in instructors) {
+  console.log(instructors[i])
 }
 ```
 
 * Also begins with the keyword `for`
-* The parentheses contain the iteratee (the variable representing the index), followed by the keyword `in`, followed by the complex data type you would like to iterate over (either array or object)
+* The parentheses contain the iteratee (the variable representing the index), followed by the keyword `in`, followed by the complex data type you would like to iterate over (either `array` or `object`)
 
-## Break (10 minutes / 1:10)
+## Break (10 min / 3:30)
 
-### You Do (5 minutes / 1:15)
+### You Do (10 min / 3:40)
+> 5 min exercise, 5 min review
 
 With the person next to you, use the concepts from this lesson to write the [99 Bottles of Beer song](http://www.99-bottles-of-beer.net/lyrics.html). Each line of the can be printed out in rapid succession, and does not require user input.
 
 > Bonus: do this once using a for loop and once using a while loop.
 
 
-## Googling for Documentation (5 minutes / 1:20)
+## Googling for Documentation (5 min / 3:45)
 
 For in depth information on any of these types, the best place to start is google.
 
@@ -182,7 +202,14 @@ Especially good resources include:
 - Blog posts, Stack Overflow questions, and Gists have lots of valuable information
   - While these can be great resources, they are not as curated as a the above sites so be wary and check publish dates
 
-## You Do: Fizz Buzz (15 minutes / 1:35)
+*Quiz!*
+- How can I see what string methods are available to me?
+- How do i generate a random number? 
+- What's a good better looking yellow I can use on my page?
+- How can I add something to an array?
+- Is container an html element?
+
+## You Do: Fizz Buzz (15 min / 4:00)
 
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge of conditionals and loops. Implement code that does the following...
 * Counts from 1 to 100 and prints out something for each number.
@@ -197,18 +224,21 @@ Your output should look something like this...
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
 
-## Break (10min / 1:45)
+## Break (10 min / 4:10)
 
-## You Do: Pair Programming Bot (40 min / 2:25)
+## You Do: Pair Programming Bot (40 min / 4:50)
 
 [Pair Programming Exercises](https://git.generalassemb.ly/ga-wdi-exercises/js-pair-programming-bot-lite)
 
-# Review Questions (5 minutes / 2:30)
+# Review Questions (10 min / 5:00)
 
-  1. What role does Javascript play on a website?
-  2. What is the difference between undefined and null?
-  3. What are the five primitive data types?
-  4. What is an example of type coercion?
+  1. How does control flow affect our code?
+  2. What are two types of loops we can use in javascript?
+  3. What is the syntax of a `for loop`?
+  4. How many `if else` statements can I have in an `if` statement?
+  5. How can I tell how many items are in an array?
+  6. What happens if the conditional for a `while loop` is never met?
+  7. Where can I find more information about `(insert topic of your choice)`?
 
 # Homework
 * [Choose Your Own Adventure](https://git.generalassemb.ly/ga-wdi-exercises/choose_your_own_adventure_js)
