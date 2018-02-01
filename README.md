@@ -102,46 +102,16 @@ while (num <= 100) {
 ```
 [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) is some more information on while loops.
 
-The `while` loop is especially useful when you have to have a loop run for an unknown number of times.
+The `while` loop is especially useful when you have to have a loop run for an unknown number of times.  Make sure you write in a way for your condition to eventually become false or else you can get cause in an infinite loop!
 
 ```js
 let passwordGuess = ''
 while (passwordGuess !== 'password') {
   passwordGuess = prompt('You have been imprisoned in the code-block of a while loop! What is the magic word to exit?')
 }
-alert('Argh! You have escaped! I am so lonely, the world never says hello back.')
+alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.')
 ``` 
 
-<!-- 
-## Arrays (10 minutes / 0:45)
-
-In addition to the primitive data types we have seen so far in class, JavaScript also has the ability to store collections of data. The most simple type of collection is an array. Arrays are lists of other data, accessed by their position in the list. Array indexes start at 0 and move up from there.
-
-Arrays can contain any type of data, even mixed data types!
-```js
-// we can declare an array
-let myArr = [4, 5, 6, 7]
-console.log(myArr)
-
-// we can access one item
-console.log(myArr[1])
-
-// we can change a value
-myArr[1] = 8
-console.log(myArr)
-
-// we can add an item to the end
-myArr.push(9)
-console.log(myArr)
-
-// we can remove an item from the end
-console.log(myArr.pop())
-console.log(myArr)
-```
-
-[Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) is more documentation on arrays.
-
--->
 ## for loop (10 minutes / 3:15)
 
 ```js
