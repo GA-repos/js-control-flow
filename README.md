@@ -6,11 +6,11 @@
   - Identify elements of control flow
   - Utilize control flow elements to direct the execution of a program with conditional logic
 
-## What is Control Flow? (5 min / 2:35)
+## Conditionals (a.k.a. Control Flow) (15 min / 2:45)
+
+### What is Control Flow?
 
 Control flow is simply applying conditional logic to how your code is run. You may want to run certain blocks of code but not others, or you might want to run certain code blocks over and over again. We probably wouldn't want to show a user account page to a user who isn't logged in, since there would be no data to display!
-
-## Conditionals (a.k.a. Control Flow) (10 min / 2:45)
 
 A common feature of programming languages is conditional blocks. We can execute different pieces of code depending on whether a condition(s) is met.
 
@@ -20,16 +20,37 @@ if (condition) {
 }
 ```
 
-Example:
+*Example*:
 ```js
 let hungry = true
 
 if (hungry) {
-  console.log("you should eat food! so helpful.")
+  console.log('You should eat food!')
 }
 ```
 
-We can also run other code if the condition is not met.
+We can also run other code if the condition is not met with `else`.
+
+```js
+if (condition) {
+  // this code runs if the condition evaluates to true
+} else {
+  // this code runs if the condition evaluates to false
+}
+```
+
+*Example*:
+```js
+let hungry = true
+
+if (hungry) {
+  console.log('You should eat food!')
+} else {
+  console.log('You should not eat food!')
+}
+```
+
+We can also have multiple conditions to check for using `else if`
 
 ```js
 if (condition) {
@@ -43,8 +64,9 @@ else {
   // this code does not run if the condition or anotherCondition evaluates to true
 }
 ```
-You must have the initial `if` statement, and you can only have one final `else` statement, but you can have any number of `else if` statements in the middle.
+You must have the initial `if` statement, and you can only have one final `else` statement, but you can have *any number* of `else if` statements in the middle.
 
+*Example*:
 ```js
 let assignments_completed = 0
 
