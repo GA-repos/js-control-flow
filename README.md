@@ -127,7 +127,9 @@ The `for` loop contains 3 parts separated by `;`
 
 The actual content of the loop is located within the trailing curly brackets. In this example, `console.log(i)` will be executed ten times.
 
-Oftentimes we will use a `for` loop to iterate through an array. That means we will want the loop to execute as many times as there are items in that array. Take a look at this example...
+### Iterating over Arrays
+
+`for` loops are especially useful for going an array, item by item, and doing something with each item, one at a time. We could also do something with a particular item if it meets certain conditions. The block of the `for` loop, designated by curly braces, is where we would do something with each item. Take a look at this example...
 
 ```js
 let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
