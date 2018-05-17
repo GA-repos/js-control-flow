@@ -4,21 +4,18 @@
 
 - Describe the role of control flow
 - Identify elements of control flow
-- Utilize control flow elements to direct the execution of a program with
-  conditional logic
+- Utilize control flow elements to direct the execution of a program with conditional logic
 
-## Conditionals (a.k.a. Control Flow) (15 min / 2:45)
+## Conditionals (a.k.a. Control Flow) (15 min / 0:15)
 
 ### What is Control Flow?
 
-Control flow is simply applying conditional logic to how your code is run. You
-may want to run certain blocks of code but not others, or you might want to run
-certain code blocks over and over again. We probably wouldn't want to show a
-user account page to a user who isn't logged in, since there would be no data to
-display!
+Control flow is simply applying conditional logic to how your code is run. 
+You may want to run certain blocks of code but not others, or you might want to run certain code blocks over and over again. 
+We probably wouldn't want to show a user account page to a user who isn't logged in, since there would be no data to display!
 
-A common feature of programming languages is conditional blocks. We can execute
-different pieces of code depending on whether a condition(s) is met.
+A common feature of programming languages is conditional blocks. 
+We can execute different pieces of code depending on whether a condition(s) is met.
 
 ```js
 if (condition) {
@@ -32,7 +29,7 @@ if (condition) {
 let hungry = true
 
 if (hungry) {
-  console.log('You should eat food!')
+  console.log('You should eat something!')
 }
 ```
 
@@ -54,7 +51,7 @@ let hungry = true
 if (hungry) {
   console.log('You should eat food!')
 } else {
-  console.log('You should not eat food!')
+  console.log('Everything is cool')
 }
 ```
 
@@ -62,39 +59,41 @@ We can also have multiple conditions to check for using `else if`
 
 ```js
 if (condition) {
-  // this code runs if the condition evaluates to true
+  // this code runs if condition evaluates to true
 }
-else if (anotherCondition) {
-  // this code runs if the condition evaluates to false and anotherCondition evaluates to true
+else if (condition_2) {
+  // this code runs if condition evaluates to false and condition2 evaluates to true
 }
 else {
-  // this code runs if the condition and anotherCondition evaluate to false
-  // this code does not run if the condition or anotherCondition evaluates to true
+  // this code runs if the condition and condition_2 both evaluate to false
+  // this code does not run if either condition or condition_2 evaluates to true
 }
 ```
 
-You must have the initial `if` statement, and you can only have one final `else`
-statement, but you can have *any number* of `else if` statements in the middle.
+You must have the initial `if` statement, and you can only have one final `else` statement, but you can have *any number* of `else if` statements in the middle.
 
 *Example*:
 
 ```js
-let assignments_completed = 0
+let dinosaur = "stegosaurus"
 
-if (assignments_completed === 0) {
-  console.log("Work on your homework!")
-} else if (assignments_completed === 1) {
-  console.log("Good work, still more to go")
-} else if (assignments_completed === 2) {
-  console.log("Almost there!")
-} else {
-  console.log("You are done!")
+if(dinosaur === "t-rex") {
+  console.log("raaaarrrr")
+}
+else if(dinosaur === "velociraptor") {
+  console.log("we're all gonna die")
+}
+else if(dinosaur === "triceratops") {
+  console.log("ooh spiky")
+}
+else {
+  console.log("I give up")
 }
 ```
 
-### You Do (10 min / 2:55)
+### You Do (10 min / 0:25)
 
-In [Repl.it](https://repl.it/) or VS Code, write a conditional statement that
+In [Repl.it](https://repl.it/), [CodePen](https://codepen.io/) or VS Code, write a conditional statement that
 acts like a bouncer at a bar. If the age variable is below 21, the program
 should output that the person cannot enter because they are too young, if they
 are over 21 they can enter, and if age is not a number it outputs an error.
@@ -105,13 +104,14 @@ the bar but cannot drink!
 [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 is more documentation.
 
-## while loop (10 min / 3:05)
+## while loop (10 min / 0:35)
 
 A `while` loop is like an `if` statement but it will execute the content of its
 block repeatedly until the condition becomes false.
 
 ```js
-num = 0
+let num = 0
+
 while (num <= 100) {
   console.log(num)
   num += 1 // short-hand for num = num + 1
@@ -125,15 +125,19 @@ The `while` loop is especially useful when you have to have a loop run for an
 unknown number of times.  Make sure you write in a way for your condition to
 eventually become false or else you can get cause in an infinite loop!
 
+Here's an example of an infinite loop:
+
 ```js
-let passwordGuess = ''
-while (passwordGuess !== 'password') {
-  passwordGuess = prompt('You have been imprisoned in the code-block of a while loop! What is the magic word to exit?')
+let running = true
+
+while(running) {
+  console.log('this is the song that never ends')
+  // do something to set running === false
+  // to make it end
 }
-alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.')
 ```
 
-## for loop (10 minutes / 3:15)
+## for loop (15 minutes / 0:50)
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -162,7 +166,7 @@ designated by curly braces, is where we would do something with each item. Take
 a look at this example...
 
 ```js
-let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
+let instructors = ["meg", "zakk", "perry", "james", "ali", "jimmy", "mike"]
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i])
@@ -176,7 +180,7 @@ for (let i = 0; i < instructors.length; i++) {
 We can also combine loops with `if-else` statements for even more control.
 
 ```js
-let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
+let instructors = ["meg", "zakk", "perry", "james", "ali", "jimmy", "mike"]
 let currentInstructor = prompt('Who is currently teaching?')
 
 for (let i = 0; i < instructors.length; i++) {
@@ -188,13 +192,13 @@ for (let i = 0; i < instructors.length; i++) {
 }
 ```
 
-### `for in` loop (5 minutes / 3:20)
+### `for in` loop (5 minutes / 0:55)
 
 The `for in` loop functions similar to the `for` loop, but it is only used when
-iterating through a collection.
+iterating through a collection. A collection can either be an array or object.
 
 ```js
-let instructors = ["meg", "zakk", "perry", "james", "ali", "max", "mike"]
+let instructors = ["meg", "zakk", "perry", "james", "ali", "jimmy", "mike"]
 
 for (let i in instructors) {
   console.log(instructors[i])
@@ -206,9 +210,27 @@ for (let i in instructors) {
   followed by the keyword `in`, followed by the complex data type you would like
   to iterate over (either `array` or `object`)
 
-## Break (10 min / 3:30)
+```js
+let instructors = {
+  "meg" : "maciver",
+  "zakk" : "fleischmann",
+  "perry" : "fustero",
+  "james" : "reichard",
+  "ali" : "spittel",
+  "jimmy" : "byess",
+  "mike" : "nabil"
+}
 
-### You Do (10 min / 3:40)
+for (let n in instructors) {
+  console.log(instructors[n])
+} 
+```
+
+In this example, `n` would be equal to the key, or first name. So when we access `instructors[n]` it will output the last name.
+
+## Break (10 min / 1:05)
+
+### You Do (10 min / 1:15)
 
 > 5 min exercise, 5 min review
 
@@ -218,7 +240,9 @@ of the can be printed out in rapid succession, and does not require user input.
 
 > Bonus: do this once using a for loop and once using a while loop.
 
-## Googling for Documentation (5 min / 3:45)
+## You Do: Googling for Documentation (10 min / 1:25)
+
+> 5 min exercise, 5 min review
 
 For in depth information on any of these types, the best place to start is
 google.
@@ -230,27 +254,28 @@ For example: search `javascript number power`
 
 Especially good resources include:
 
-- [W3 Schools](https://www.w3schools.com/) has great reference and tutorials
-  though sometimes does not have the depth you are looking for.
 - [Mozilla Developer Network (MDN)](https://developer.mozilla.org/) is very
   similar to W3 in that it has both reference and tutorial but MDN is much more
   detailed (this can be a good or bad thing).
+- [W3 Schools](https://www.w3schools.com/) has great reference and tutorials though sometimes does not have the depth you are looking for.
 - [Wikipedia](https://www.wikipedia.org/) is great as a primer for high level
   ideas that may not be language specific.
-- Blog posts, Stack Overflow questions, and Gists have lots of valuable
+- Blog posts, Stack Overflow questions, and github gists have lots of valuable
   information
   - While these can be great resources, they are not as curated as a the above
     sites so be wary and check publish dates
 
-*Quiz!*
+*Open book quiz!*
 
-- How can I see what string methods are available to me?
-- How do i generate a random number? 
-- What's a good better looking yellow I can use on my page?
-- How can I add something to an array?
-- Is container an html element?
+Split into groups of three. Each group should try to find the answer to one of these questions:
 
-## You Do: Fizz Buzz (15 min / 4:00)
+1. How can I see what string methods are available to me?
+2. How do i generate a random number?
+3. What does the `typeof` method do?
+4. How can I add something to an array?
+5. What's the difference between `==` and `===`?
+
+## You Do: Fizz Buzz (15 min / 1:40)
 
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge
 of conditionals and loops. Implement code that does the following:
@@ -268,14 +293,14 @@ Your output should look something like this...
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
 
-## Break (10 min / 4:10)
+## Break (10 min / 1:50)
 
-## You Do: Pair Programming Bot (40 min / 4:50)
+## You Do: Pair Programming Bot (30 min / 2:20)
 
 [Pair Programming
 Exercises](https://git.generalassemb.ly/dc-wdi-fundamentals/js-pair-programming-bot)
 
-## Review Questions (10 min / 5:00)
+## Review Questions (10 min / 2:30)
 
   1. How does control flow affect our code?
   2. What are two types of loops we can use in javascript?
