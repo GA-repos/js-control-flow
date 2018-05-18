@@ -38,7 +38,8 @@ We can also run other code if the condition is not met with `else`.
 ```js
 if (condition) {
   // this code runs if the condition evaluates to true
-} else {
+}
+else {
   // this code runs if the condition evaluates to false
 }
 ```
@@ -50,7 +51,8 @@ let hungry = true
 
 if (hungry) {
   console.log('You should eat food!')
-} else {
+} 
+else {
   console.log('Everything is cool')
 }
 ```
@@ -186,7 +188,8 @@ let currentInstructor = prompt('Who is currently teaching?')
 for (let i = 0; i < instructors.length; i++) {
   if (instructors[i] === currentInstructor) {
     console.log(instructors[i] + ' is currently teaching!')
-  } else {
+  }
+  else {
     console.log(instructors[i])
   }
 }
