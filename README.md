@@ -30,11 +30,9 @@ By the end of this, developers should be able to:
 
 ## Introduction (5 min / 0:10)
 
-Control flow is simply applying conditional logic to how your code is run. You
-may want to run certain blocks of code but not others, or you might want to run
-certain code blocks over and over again. We probably wouldn't want to show a
-user account page to a user who isn't logged in, since there would be no data to
-display!
+Control flow is simply applying conditional logic to how your code is run. 
+You may want to run certain blocks of code but not others, or you might want to run certain code blocks over and over again. 
+We probably wouldn't want to show a user account page to a user who isn't logged in, since there would be no data to display!
 
 ## Types of Control Flow (15 min / 0:25)
 
