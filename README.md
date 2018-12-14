@@ -9,7 +9,7 @@ core, control flow is about responding to data.
 
 * JavaScript syntax
 * Basic data types (Numbers, Booleans, Strings)
-* Operators (arithmatic, logic, and comparison)
+* Operators (arithmetic, logic, and comparison)
 * Arrays and Objects
 
 ## Objectives
@@ -17,22 +17,18 @@ core, control flow is about responding to data.
 By the end of this, developers should be able to:
 
 * Describe the role of control flow in programming
-* Utilize `while` loops, `for` loops, and `for`/`in` loops
+* Utilize `while` loops and `for` loops
 * Write conditional statements using `if` and `else if`
 * Identify problem types and match to the appropriate control flow statements
 * Iterate over arrays using loops
 
-## Preparation
-
-1. Fork and clone this repository.
-1. Create a new branch, `training`, for your work.
-1. Checkout to the `training` branch.
-
 ## Introduction (5 min / 0:10)
 
-Control flow is simply applying conditional logic to how your code is run. 
-You may want to run certain blocks of code but not others, or you might want to run certain code blocks over and over again. 
-We probably wouldn't want to show a user account page to a user who isn't logged in, since there would be no data to display!
+Control flow is simply applying conditional logic to how your code is run. You
+may want to run certain blocks of code but not others, or you might want to run
+certain code blocks over and over again. We probably wouldn't want to show
+a user account page to a user who isn't logged in, since there would be no data
+to display!
 
 ## Types of Control Flow (15 min / 0:25)
 
@@ -74,7 +70,7 @@ our condition *is not* met. *We'll dive into this pattern more in a few minutes!
 
 The third form of control flow is: **looping**.
 
-![Looping control floow](https://eloquentjavascript.net/img/controlflow-loop.svg)
+![Looping control flow](https://eloquentjavascript.net/img/controlflow-loop.svg)
 
 Looping is extremely powerful and there are two ways to think about it:
 
@@ -101,7 +97,7 @@ In this snippet of code, the message will continue to print until the condition
 Contrast the above snippet with the following, demonstrating a `while` loop:
 
 ```js
-num = 0
+let num = 0
 while (num <= 5) {
   console.log("hello world")
   num += 1 // short-hand for num = num + 1
@@ -115,13 +111,14 @@ equal to 5. *We'll dive into this pattern more in a few minutes!*
 ## Conditionals (10 min / 0:35)
 
 Conditionals are a common feature of programming languages because it's handy to
-execute different blocks of code depending on whether a condition(s) is met.
+execute different blocks of code depending on whether a condition is met.
 
 Conditionals follow this pattern:
 
 ```js
 if (condition) {
-  // code here will run if the condition evaluates to true
+  // code writen here will run if
+  // the condition evaluates to true
 }
 ```
 
@@ -129,7 +126,7 @@ if (condition) {
 
 The above is a simple conditional statement, with only a single condition. We
 can add a negative condition (code that will run if the condition is `false`)
-and we can add additional conditions.
+and we can add additional positive conditions.
 
 If we have code we want to run if our condition is false, we use `else`:
 
@@ -172,7 +169,7 @@ if (assignmentCompletion === 0) {
 ```
 
 One of the things your instructors will say often is that JavaScript is
-flexible. We can see an example of that here when discussing conditionls. For
+flexible. We can see an example of that here when discussing conditionals. For
 instance, if you want to test two conditions without using and `else`/`if` you
 can do so by using the logical operators (`&&` and `||`):
 
@@ -192,9 +189,10 @@ become difficult to follow!
 
 ### Practice Conditionals (15 min / 0:50)
 
-Let's spend some time practicing writing conditionals. Open up [this exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-conditionals-practice)
-and work through the prompts. Get as far as you can in the time alotted and feel
-free to come back and review these!
+Let's spend some time practicing writing conditionals. Open up [this
+exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-conditionals-practice)
+and work through the prompts. Get as far as you can in the time allotted and
+feel free to come back and review these!
 
 ## Break (10 min / 1:00)
 
@@ -213,7 +211,7 @@ for (let i = 0; i < 5; i++) {
 ```
 
 The first thing to notice here is the overall structure. We need the `for`
-keywork, followed by the parenthesis and everything inside of them (`(let i = 0;
+keyword, followed by the parenthesis and everything inside of them (`(let i = 0;
 i < 10; i++)`), and then the block of code (inside the `{}` braces).
 
 Let's break down what's happening between the parenthesis (`()`), because there
@@ -226,7 +224,8 @@ are three parts to this expression:
 3. `i++` controls how the iteratee should change after each iteration.
 
 These three pieces of the `for` loop are what make them powerful - we can alter
-these to iterate in hundreds of different ways. Before we get to that, let's walk through how this loop works, as if we were the JavaScript compiler:
+these to iterate in hundreds of different ways. Before we get to that, let's
+walk through how this loop works, as if we were the JavaScript compiler:
 
 1. We arrive at the for loop. Create a variable, `i`, and set it equal to 0.
 2. Check our condition (`i < 5`). Is it true? Is `i` less than 5? Yes!
@@ -266,7 +265,7 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 
 Let's spend some time practicing writing loops. Open up [this
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-loops-practice)
-and work through the prompts. Get as far as you can in the time alotted and feel
+and work through the prompts. Get as far as you can in the time allotted and feel
 free to come back and review these!
 
 ### Iterating over Arrays (10 min / 1:35)
@@ -276,7 +275,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Don", "Hector", "Jimmy", "Zakk", "Eva"]
+let instructors = ["Don", "Hector", "Jimmy", "Zakk", "Eva", "Pearl", "Erin"]
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i])
