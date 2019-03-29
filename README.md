@@ -168,6 +168,31 @@ if (assignmentCompletion === 0) {
 }
 ```
 
+We can also add nested if/else statements:
+
+```js
+let assignmentCompletion = 0
+let checkpointScore = 100
+
+if(assignmentCompletion === 0) {
+  console.log("Work on your homework!")
+  if(checkpointScore === 100) {
+    console.log("Well you did great on the quiz at least")
+  }
+  else if(checkpointScore < 60) {
+    console.log("Time for a retake!")
+  }
+}
+else if( assignmentCompletion > 80 ) {
+  console.log("You're doing great!")
+}
+else {
+  console.log("Keep on truckin")
+}
+```
+
+There's no (practical) limit to the depth of if / else statements. But you can imagine that this gets difficult to read and understand fairly quickly. Simpler is better!
+
 One of the things your instructors will say often is that JavaScript is
 flexible. We can see an example of that here when discussing conditionals. For
 instance, if you want to test two conditions without using and `else`/`if` you
@@ -183,6 +208,18 @@ if (condition || condition) {
 }
 ```
 
+
+```js
+let awesome = true
+
+if(10 > 5 && awesome) {
+  console.log("You are awesome")
+}
+
+if(5 > 10 || awesome) {
+  console.log("still awesome")
+}
+```
 This can make your code a little cleaner and easier to read, it can also let you
 express more complex conditionals. But, use it sparingly! Your logic can quickly
 become difficult to follow!
@@ -225,7 +262,7 @@ are three parts to this expression:
 
 These three pieces of the `for` loop are what make them powerful - we can alter
 these to iterate in hundreds of different ways. Before we get to that, let's
-walk through how this loop works, as if we were the JavaScript compiler:
+walk through how this loop works, as if we were the JavaScript interpreter:
 
 1. We arrive at the for loop. Create a variable, `i`, and set it equal to 0.
 2. Check our condition (`i < 5`). Is it true? Is `i` less than 5? Yes!
