@@ -298,7 +298,7 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 }
 ```
 
-#### You Do: Practice `for` Loops (15 min / 1:25)
+### You Do: Practice `for` Loops (15 min / 1:25)
 
 Let's spend some time practicing writing loops. Open up [this
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-loops-practice)
@@ -333,7 +333,7 @@ For the first iteration of the loop, `i` is set to 0 (`let i = 0`). Since `i` is
 `instructors.length` (in this case, 5). With each iteration, the value of `i`
 will increase by 1, so we'll retrieve the next item in the array!
 
-#### Practice Iterating over Arrays (15 min / 1:50)
+### You Do: Practice Iterating over Arrays (15 min / 1:50)
 
 Return to [the previous
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-loops-practice)
@@ -375,7 +375,7 @@ while (passwordGuess !== 'password') {
 alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.')
 ```
 
-#### Practice `while` Loops (15 min / 2:25)
+### You Do: Practice `while` Loops (15 min / 2:25)
 
 Return to [the previous
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-loops-practice)
