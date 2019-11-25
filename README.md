@@ -224,7 +224,7 @@ This can make your code a little cleaner and easier to read, it can also let you
 express more complex conditionals. But, use it sparingly! Your logic can quickly
 become difficult to follow!
 
-### Practice Conditionals (15 min / 0:50)
+### You Do: Practice Conditionals (15 min / 0:50)
 
 Let's spend some time practicing writing conditionals. Open up [this
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-conditionals-practice)
@@ -298,7 +298,7 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 }
 ```
 
-#### Practice `for` Loops (15 min / 1:25)
+#### You Do: Practice `for` Loops (15 min / 1:25)
 
 Let's spend some time practicing writing loops. Open up [this
 exercise](https://git.generalassemb.ly/dc-wdi-fundamentals/js-loops-practice)
