@@ -59,7 +59,7 @@ age and we want to ensure that the value they give us is a number greater than
 
 ```js
 if (age >= 16) {
-  console.log('You can drive!')
+  console.log('You can drive!');
 }
 ```
 
@@ -87,7 +87,7 @@ world'`):
 
 ```js
 for (let i = 0; i < 5; i++) {
-  console.log("hello world")
+  console.log("hello world");
 }
 ```
 
@@ -97,10 +97,10 @@ In this snippet of code, the message will continue to print until the condition
 Contrast the above snippet with the following, demonstrating a `while` loop:
 
 ```js
-let num = 0
+let num = 0;
 while (num <= 5) {
-  console.log("hello world")
-  num += 1 // short-hand for num = num + 1
+  console.log("hello world");
+  num += 1; // short-hand for num = num + 1
 }
 ```
 
@@ -155,39 +155,39 @@ We can add as many `else`/`if` statements as we want, one for each condition we
 want to check, but after a while our code becomes hard to read:
 
 ```js
-let assignmentCompletion = 0
+let assignmentCompletion = 0;
 
 if (assignmentCompletion === 0) {
-  console.log("Work on your homework!")
+  console.log("Work on your homework!");
 } else if (assignmentCompletion === 1) {
-  console.log("Good work, still more to go")
+  console.log("Good work, still more to go");
 } else if (assignmentCompletion === 2) {
-  console.log("Almost there!")
+  console.log("Almost there!");
 } else {
-  console.log("You are done!")
+  console.log("You are done!");
 }
 ```
 
 We can also add nested if/else statements:
 
 ```js
-let assignmentCompletion = 0
-let checkpointScore = 100
+let assignmentCompletion = 0;
+let checkpointScore = 100;
 
 if(assignmentCompletion === 0) {
-  console.log("Work on your homework!")
+  console.log("Work on your homework!");
   if(checkpointScore === 100) {
-    console.log("Well you did great on the quiz at least")
+    console.log("Well you did great on the quiz at least");
   }
   else if(checkpointScore < 60) {
-    console.log("Time for a retake!")
+    console.log("Time for a retake!");
   }
 }
 else if( assignmentCompletion > 80 ) {
-  console.log("You're doing great!")
+  console.log("You're doing great!");
 }
 else {
-  console.log("Keep on truckin")
+  console.log("Keep on truckin");
 }
 ```
 
@@ -213,11 +213,11 @@ if (condition || condition) {
 let awesome = true
 
 if(10 > 5 && awesome) {
-  console.log("You are awesome")
+  console.log("You are awesome");
 }
 
 if(5 > 10 || awesome) {
-  console.log("still awesome")
+  console.log("still awesome");
 }
 ```
 This can make your code a little cleaner and easier to read, it can also let you
@@ -243,7 +243,7 @@ example:
 
 ```js
 for (let i = 0; i < 5; i++) {
-  console.log(i)
+  console.log(i);
 }
 ```
 
@@ -294,7 +294,7 @@ for (let i = 100; i >= 0; i--) {
 
 ```js
 for (let i = 1, j = 5; i < 5; i++, j--) {
-  console.log(i, j)
+  console.log(i, j);
 }
 ```
 
@@ -312,10 +312,10 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Don", "Hector", "Jimmy", "Zakk", "Eva", "Pearl", "Erin"]
+let instructors = ["Don", "Hector", "Jimmy", "Zakk", "Eva", "Pearl", "Erin"];
 
 for (let i = 0; i < instructors.length; i++) {
-  console.log(instructors[i])
+  console.log(instructors[i]);
 }
 ```
 
@@ -349,10 +349,10 @@ block repeatedly until the condition becomes false. (i.e. the `while` loop
 continues *while* the condition is true).
 
 ```js
-num = 0
+let num = 0;
 while (num <= 10) {
-  console.log(num)
-  num += 1 // short-hand for num = num + 1
+  console.log(num);
+  num += 1; // short-hand for num = num + 1
 }
 ```
 
@@ -368,11 +368,11 @@ Because of this, they're perfect for cases when you need a block of code to run
 (loop) an unknown number of times:
 
 ```js
-let passwordGuess = ''
+let passwordGuess = '';
 while (passwordGuess !== 'password') {
-  passwordGuess = prompt('You have been imprisoned in the code-block of a while loop! What is the magic word to exit?')
+  passwordGuess = prompt('You have been imprisoned in the code-block of a while loop! What is the magic word to exit?');
 }
-alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.')
+alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.');
 ```
 
 ### You Do: Practice `while` Loops (15 min / 2:25)
