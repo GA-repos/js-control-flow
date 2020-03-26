@@ -301,7 +301,7 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 ### You Do: Practice `for` Loops (15 min / 1:25)
 
 Let's spend some time practicing writing loops. Open up [this
-exercise](https://git.generalassemb.ly/seir-129/js-loops-practice)
+exercise](https://git.generalassemb.ly/seir-323/js-loops-practice)
 and work through the prompts. Get as far as you can in the time allotted and feel
 free to come back and review these!
 
@@ -312,7 +312,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Don", "Hector", "Jimmy", "Zakk", "Eva", "Pearl", "Erin"];
+let instructors = ["Jen", "Esin", "Hou", "Carlos", "Jerrica", "Brad"];
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i]);
