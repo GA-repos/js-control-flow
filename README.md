@@ -378,7 +378,7 @@ alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.');
 ### You Do: Practice `while` Loops (15 min / 2:25)
 
 Return to [the previous
-exercise](https://git.generalassemb.ly/seir-129/js-loops-practice)
+exercise](https://git.generalassemb.ly/seir-323/js-loops-practice)
 and work through the prompts in part 3.  These prompts will give you the chance
 to practice writing `for` loops.
 
