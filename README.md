@@ -227,7 +227,7 @@ become difficult to follow!
 ### You Do: Practice Conditionals (15 min / 0:50)
 
 Let's spend some time practicing writing conditionals. Open up [this
-exercise](https://git.generalassemb.ly/seir-129/js-conditionals-practice)
+exercise](https://git.generalassemb.ly/seir-323/js-conditionals-practice)
 and work through the prompts. Get as far as you can in the time allotted and
 feel free to come back and review these!
 
