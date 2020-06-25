@@ -178,15 +178,12 @@ if(assignmentCompletion === 0) {
   console.log("Work on your homework!");
   if(checkpointScore === 100) {
     console.log("Well you did great on the quiz at least");
-  }
-  else if(checkpointScore < 60) {
+  } else if(checkpointScore < 60) {
     console.log("Time for a retake!");
   }
-}
-else if( assignmentCompletion > 80 ) {
+} else if( assignmentCompletion > 80 ) {
   console.log("You're doing great!");
-}
-else {
+} else {
   console.log("Keep on truckin");
 }
 ```
