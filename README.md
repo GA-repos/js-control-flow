@@ -298,7 +298,7 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 ### You Do: Practice `for` Loops (15 min / 1:25)
 
 Let's spend some time practicing writing loops. Open up [this
-exercise](https://git.generalassemb.ly/sei-921/js-loops-practice)
+exercise](https://git.generalassemb.ly/SEIR-1130/js-loops-practice)
 and work through the prompts. Get as far as you can in the time allotted and feel
 free to come back and review these!
 
@@ -309,7 +309,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Jen", "Esin", "Tabitha", "Carlos", "Nic", "Danielle"];
+let instructors = ["Will", "Jeremy", "Tabitha", "Elektra"];
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i]);
@@ -327,13 +327,13 @@ Let's unpack what's happening here:
 For the first iteration of the loop, `i` is set to 0 (`let i = 0`). Since `i` is
 0, we can use it to retrieve the first item in the array, at an index of
 0 (`instructors[i]`). That will continue while `i` is less than
-`instructors.length` (in this case, 5). With each iteration, the value of `i`
+`instructors.length` (in this case, 4). With each iteration, the value of `i`
 will increase by 1, so we'll retrieve the next item in the array!
 
 ### You Do: Practice Iterating over Arrays (15 min / 1:50)
 
 Return to [the previous
-exercise](https://git.generalassemb.ly/sei-921/js-loops-practice)
+exercise](https://git.generalassemb.ly/SEIR-1130/js-loops-practice)
 and work through the prompts in Part 2. These prompts will give you a chance to
 practice iterating over arrays.
 
@@ -375,7 +375,7 @@ alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.');
 ### You Do: Practice `while` Loops (15 min / 2:25)
 
 Return to [the previous
-exercise](https://git.generalassemb.ly/sei-921/js-loops-practice)
+exercise](https://git.generalassemb.ly/SEIR-1130/js-loops-practice)
 and work through the prompts in part 3.  These prompts will give you the chance
 to practice writing `for` loops.
 
