@@ -295,14 +295,14 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
 }
 ```
 
-### You Do: Practice `for` Loops (15 min / 1:25)
+### You Do: Practice `for` Loops (15 min)
 
 Let's spend some time practicing writing loops. Open up [this
 exercise](../../../js-loops-practice)
 and work through the prompts. Get as far as you can in the time allotted and feel
 free to come back and review these!
 
-### Iterating over Arrays (10 min / 1:35)
+### Iterating over Arrays 
 
 One of the areas where `for` loops really shine is when working with arrays.
 We can set the value of `i` to `0` and use the array's length in the condition
@@ -371,7 +371,7 @@ while (passwordGuess !== 'password') {
 alert('Argh! You have escaped! I am so lonely, no one ever wants to stay.');
 ```
 
-### You Do: Practice `while` Loops (15 min / 2:25)
+### You Do: Practice `while` Loops (15 min)
 
 Return to [the previous
 exercise](../../../js-loops-practice)
