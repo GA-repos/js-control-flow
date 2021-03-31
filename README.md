@@ -22,7 +22,7 @@ By the end of this, developers should be able to:
 * Identify problem types and match to the appropriate control flow statements
 * Iterate over arrays using loops
 
-## Introduction (5 min / 0:10)
+## Introduction
 
 Control flow is simply applying conditional logic to how your code is run. You
 may want to run certain blocks of code but not others, or you might want to run
@@ -30,7 +30,7 @@ certain code blocks over and over again. We probably wouldn't want to show
 a user account page to a user who isn't logged in, since there would be no data
 to display!
 
-## Types of Control Flow (15 min / 0:25)
+## Types of Control Flow
 
 We're going to learn about two new forms of control flow; you already know one!
 
@@ -108,7 +108,7 @@ This snippet is doing the same thing: printing `"hello world"` 5 times. The
 difference is in the condition: ***while*** the `num` variable is less than or
 equal to 5. *We'll dive into this pattern more in a few minutes!*
 
-## Conditionals (10 min / 0:35)
+## Conditionals 
 
 Conditionals are a common feature of programming languages because it's handy to
 execute different blocks of code depending on whether a condition is met.
@@ -221,18 +221,18 @@ This can make your code a little cleaner and easier to read, it can also let you
 express more complex conditionals. But, use it sparingly! Your logic can quickly
 become difficult to follow!
 
-### You Do: Practice Conditionals (15 min / 0:50)
+### You Do: Practice Conditionals
 
 Let's spend some time practicing writing conditionals. Open up [this
 exercise](../../../js-conditionals-practice)
 and work through the prompts. Get as far as you can in the time allotted and
 feel free to come back and review these!
 
-## Break (10 min / 1:00)
+## Break (10 min)
 
 ## Loops
 
-### `for` Loops (10 min / 1:10)
+### `for` Loops 
 
 `for` loops are extremely powerful, but there are a couple of parts to them that
 we have to learn before we can see their full power. Let's start with a simple
@@ -309,7 +309,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Will", "Jeremy", "Tabitha", "Elektra"];
+let instructors = ["Will", "Billie", "Paresh", "Jurgen"];
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i]);
@@ -330,17 +330,16 @@ For the first iteration of the loop, `i` is set to 0 (`let i = 0`). Since `i` is
 `instructors.length` (in this case, 4). With each iteration, the value of `i`
 will increase by 1, so we'll retrieve the next item in the array!
 
-### You Do: Practice Iterating over Arrays (15 min / 1:50)
+### You Do: Practice Iterating over Arrays
 
 Return to [the previous
 exercise](../../../js-loops-practice)
 and work through the prompts in Part 2. These prompts will give you a chance to
 practice iterating over arrays.
 
-## Break (10 min / 2:00)
+## Break (10 min)
 
-### `while` Loops (10 min / 2:10)
-
+### `while` Loops
 A `while` loop is like an `if` statement but it will execute the content of its
 block repeatedly until the condition becomes false. (i.e. the `while` loop
 continues *while* the condition is true).
@@ -379,7 +378,7 @@ exercise](../../../js-loops-practice)
 and work through the prompts in part 3.  These prompts will give you the chance
 to practice writing `for` loops.
 
-## Closing (5 min / 2:30)
+## Closing 
 
 You can get really far in programming with the knowledge you have right now:
 data types, arrays, conditionals, and loops! The biggest challenge beginners
