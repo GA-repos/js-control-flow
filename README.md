@@ -2,7 +2,7 @@
 
 # Control Flow
 
-Control flow is a very important, foundational concept in programming. At it's
+Control flow is a very important, foundational concept in programming. At its
 core, control flow is about responding to data.
 
 ## Prerequisites
