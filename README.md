@@ -309,7 +309,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Will", "Billie", "Paresh", "Jurgen"];
+let instructors = ["Kareem", "Billie", "Andrew", "Justin", "Matt", "Katie", "Kagan"];
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i]);
