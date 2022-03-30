@@ -371,7 +371,7 @@ let instructors2  = {
 		favIceCream: 'Häagen-Dazs Vanilla Bean'
 	},
 	"Katie": {
-		favIceCream: ['Vanilla Bean', 'Haagan Daas Dolce de Leche']
+		favIceCream: ['Vanilla Bean', 'Häagen-Dazs Dolce de Leche']
 	},
 	"Kagan":{
 		favIceCream: 'Banana Split'
