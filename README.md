@@ -387,7 +387,7 @@ for(let key in instructors){
 // expected output: Andrew: Cookie Dough
 // expected output: Justin: Rocky Road,Butter Pecan
 // expected output: Max: Vanilla Bean
-// expected output: Katie: Vanilla Bean,Haagan Daas Dolce de Leche
+// expected output: Katie: Vanilla Bean,Häagen-Dazs Dolce de Leche
 // expected output: Kagan: Banana Split
 
 ```
