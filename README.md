@@ -294,13 +294,6 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
   console.log(i, j);
 }
 ```
-**for of loop:**
-
-```js
-for (let i = 1, j = 5; i < 5; i++, j--) {
-  console.log(i, j);
-}
-```
 
 ### You Do: Practice `for` Loops (15 min)
 
@@ -336,6 +329,68 @@ For the first iteration of the loop, `i` is set to 0 (`let i = 0`). Since `i` is
 0 (`instructors[i]`). That will continue while `i` is less than
 `instructors.length` (in this case, 4). With each iteration, the value of `i`
 will increase by 1, so we'll retrieve the next item in the array!
+
+**We can also loop over with a for..of loop**
+For of loop will loop over a itterable object (think like a list of items) and do some operation for each item in that object. 
+
+```js
+let instructors = ["Kareem", "Billie", "Andrew", "Justin", "Max", "Katie", "Kagan"];
+
+for(let item of instructors){
+	console.log(item)
+}
+
+// expected output: Kareem
+// expected output: Billie
+// expected output: Andrew
+// expected output: Justin
+// expected output: Max
+// expected output: Katie
+// expected output: Kagan
+
+```
+
+**If we are looping over an object we will need for..in loop**
+
+
+```js
+let instructors2  = {
+	"Kareem": {
+		favIceCream: 'Cookies and Kareem'
+	}, 
+	"Billie": {
+		favIceCream: 'Vanilla'
+	}, 
+	"Andrew": {
+		favIceCream: 'Cookie Dough'
+	},
+	"Justin": {
+		favIceCream: ['Rocky Road', 'Butter Pecan']
+	},
+	"Max": {
+		favIceCream: 'Vanilla Bean'
+	},
+	"Katie": {
+		favIceCream: ['Vanilla Bean', 'Haagan Daas Dolce de Leche']
+	},
+	"Kagan":{
+		favIceCream: 'Javascript'
+	},
+}
+
+for(let key in instructors){
+  console.log(`${key}: ${instructors2[key].favIceCream}`);
+}
+
+// expected output: Kareem: Cookies and Kareem
+// expected output: Billie: Vanilla
+// expected output: Andrew: Cookie Dough
+// expected output: Justin: Rocky Road,Butter Pecan
+// expected output: Max: Vanilla Bean
+// expected output: Katie: Vanilla Bean,Haagan Daas Dolce de Leche
+// expected output: Kagan: Javascript
+
+```
 
 ### You Do: Practice Iterating over Arrays
 
