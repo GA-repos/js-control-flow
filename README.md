@@ -294,6 +294,13 @@ for (let i = 1, j = 5; i < 5; i++, j--) {
   console.log(i, j);
 }
 ```
+**for of loop:**
+
+```js
+for (let i = 1, j = 5; i < 5; i++, j--) {
+  console.log(i, j);
+}
+```
 
 ### You Do: Practice `for` Loops (15 min)
 
@@ -309,7 +316,7 @@ We can set the value of `i` to `0` and use the array's length in the condition
 to perform some action on every item in the array. That looks like this:
 
 ```js
-let instructors = ["Kareem", "Billie", "Andrew", "Justin", "Matt", "Katie", "Kagan"];
+let instructors = ["Kareem", "Billie", "Andrew", "Justin", "Max", "Katie", "Kagan"];
 
 for (let i = 0; i < instructors.length; i++) {
   console.log(instructors[i]);
@@ -395,6 +402,10 @@ on
 [loops](https://www.codewars.com/kata/search/javascript?beta=false&q=&r=-8&r=-7&tags=Loops)
 and [control
 flow](https://www.codewars.com/kata/search/javascript?beta=false&q=&r=-7&tags=Loops%2CControl%20Flow)
+
+[for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
+[for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 
 ## [License](LICENSE)
 
