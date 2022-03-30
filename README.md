@@ -351,7 +351,7 @@ for(let item of instructors){
 ```
 
 **If we are looping over an object we will need for..in loop**
-
+This will loop over the properties of an object, can you use for in on an array, but it will just give you back the indices.
 
 ```js
 let instructors2  = {
@@ -368,7 +368,7 @@ let instructors2  = {
 		favIceCream: ['Rocky Road', 'Butter Pecan']
 	},
 	"Max": {
-		favIceCream: 'Vanilla Bean'
+		favIceCream: 'Häagen-Dazs Vanilla Bean'
 	},
 	"Katie": {
 		favIceCream: ['Vanilla Bean', 'Haagan Daas Dolce de Leche']
