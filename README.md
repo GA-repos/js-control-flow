@@ -374,7 +374,7 @@ let instructors2  = {
 		favIceCream: ['Vanilla Bean', 'Haagan Daas Dolce de Leche']
 	},
 	"Kagan":{
-		favIceCream: 'Javascript'
+		favIceCream: 'Banana Split'
 	},
 }
 
@@ -388,7 +388,7 @@ for(let key in instructors){
 // expected output: Justin: Rocky Road,Butter Pecan
 // expected output: Max: Vanilla Bean
 // expected output: Katie: Vanilla Bean,Haagan Daas Dolce de Leche
-// expected output: Kagan: Javascript
+// expected output: Kagan: Banana Split
 
 ```
 
